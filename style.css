@@ -1,0 +1,400 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; 
+    padding: 10px 20px; 
+}
+
+.navbar .logo {
+    width: auto;
+    height: 50px; 
+    max-width: 100px; 
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin-right: 30px; 
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease; 
+}
+
+.navbar nav ul li a:hover {
+    color: #3498db; 
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Banner Section */
+.banner {
+    background-color: #ff6600;
+    color: white;
+    padding: 60px 20px;
+}
+
+.banner-content h2 {
+    font-size: 36px;
+}
+
+.cta-banner-button {
+    background-color: white;
+    color: #ff6600;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Services Section */
+.service-card {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.service-card h3 {
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.service-card p {
+    margin-top: 10px;
+    color: #777;
+}
+
+/* Fashion Carousel Styles */
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.carousel-item {
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item:hover {
+    transform: scale(1.05);
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.carousel-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Description box for more details */
+.carousel-description {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Booking Form Styles */
+#appointments {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    display: grid;
+    justify-content: center
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 18px;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 150%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.cta-button {
+    background-color: #ff6600;
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+
+.cta-button:hover {
+    background-color: #e65c00;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.contact-info,
+.social-links,
+.additional-links {
+    max-width: 250px;
+}
+
+.contact-info p,
+.social-links ul,
+.additional-links ul {
+    margin: 10px 0;
+}
+
+.social-links ul,
+.additional-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links a,
+.additional-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    margin: 5px 0;
+}
+
+.social-links a:hover,
+.additional-links a:hover {
+    color: #3498db;
+}
+
+.footer-bottom {
+    background-color: #34495e;
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar nav ul {/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body and Layout */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar img.logo {
+    width: auto;
+    height: 50px;
+    max-width: 120px;
+    object-fit: contain;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service-card, .carousel-item {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.service-card img, .carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-description {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+/* Form Styling */
+form .form-group {
+    margin-bottom: 20px;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #444;
+}
+
+/* Form Feedback */
+.form-feedback {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    color: #28a745;
+    font-weight: bold;
+}
+
+        flex-direction: column;
+    }
+
+    .navbar nav ul li {
+        margin-bottom: 10px; 
+    }
+    .service-card,
+    .carousel-item {
+        width: 100%;
+    }
+
+    .carousel {
+        flex-direction: column;
+        align-items: center;
+    }
+   .form-group {
+        width: 100%;
+    }
+
+    .cta-button {
+        width: 100%;
+    }
+}
